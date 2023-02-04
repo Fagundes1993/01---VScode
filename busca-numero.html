@@ -1,0 +1,22 @@
+<html>
+    <script>
+
+        // 1 - Receber um número como parâmetro
+        // 2 - Executar um for na lista para cada elemento e verificar se é igual ao numero nuscado
+        // 3 - Quando encontrar, interromper a execução e retornar true
+        // Se chegar até o fim sem encontrar, retornar false
+
+        var lista = [23, 34, 54, 65, 78, 91];
+        var existe = false;
+        function verificaNumero(numero){
+            for(var i = 0; i < lista.length; i ++){
+                console.log(i);
+                if (lista[i] === numero){
+                    existe = true;
+                    break;
+                }
+            }
+            return existe;
+        }
+    </script>
+</html>

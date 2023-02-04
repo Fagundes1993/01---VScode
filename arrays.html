@@ -1,0 +1,38 @@
+<html>
+    <script>
+       var carros = ["Zonda", "SLR", "LaFerrari"];
+       console.log(carros); 
+
+       var primeiroCarro = carros[0];
+       var segundoCarro = carros[1];
+       var terceiroCarro = carros[2];
+
+       console.log("primeira posição: " + primeiroCarro);
+       console.log("segunda posição: " + segundoCarro);
+       console.log("terceira posição: " + terceiroCarro);
+
+       carros[2] = "Huayra";
+       console.log(carros[2])
+
+       console.log("tamanho do array: " + carros.length);
+       console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+
+       carros[3] = "Utopia";
+       console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+
+       carros[carros.length] = "AMG-One";
+       console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+        
+       carros.push("Carrera GT"); // a função push do Javascript adiciona um item na ultima posição da lista
+       console.log(carros);
+
+       console.log(carros.pop()); // a função pop do Javascript remove o ultimo item da lista
+       console.log(carros);
+
+       carros.unshift("330 P4"); // a função unshift adiciona itens no inicio da lista
+       console.log(carros);
+
+       carros.shift(); // a função shift remove o primeiro item da lista
+       console.log(carros);
+    </script>
+</html>
